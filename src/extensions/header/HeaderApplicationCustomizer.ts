@@ -168,14 +168,14 @@ export default class HeaderApplicationCustomizer
       // </div>
       // </div>`;
     }
+    // <img class="headerimage" src="${require("../../../sharepoint/assets/NotFound.png")}"  alt="asu">
+    // <img class="headerimage" src="${require("../../../sharepoint/assets/NotFound.png")}"  alt="can">
 
     const topPlaceholder: PlaceholderContent | undefined = this.context.placeholderProvider.tryCreateContent(PlaceholderName.Top);
     if (topPlaceholder) {
       topPlaceholder.domElement.innerHTML = `
       <div class="navbar bg-color flex flex-row w-full">
       <div class="country-option flex-end flex padding-y">
-          <img class="headerimage" src="${require("../../../sharepoint/assets/NotFound.png")}"  alt="asu">
-          <img class="headerimage" src="${require("../../../sharepoint/assets/NotFound.png")}"  alt="can">
       </div>
       <div class="container flex flex-wrap align-center justify-between padding-x  text-white">
           <div class="logo-container">
@@ -196,6 +196,15 @@ export default class HeaderApplicationCustomizer
               </li>
               <li class="list-style">
                   <a href="#" class="decoration text-white padding-x button">Careers</a>
+              </li>
+              <li class="list-style">
+                  <a href="#" class="decoration text-white padding-x button">Manager</a>
+              </li>
+              <li class="list-style">
+                  <a href="#" class="decoration text-white padding-x button">Employees</a>
+              </li>
+              <li class="list-style">
+                  <a href="#" class="decoration text-white padding-x button">Customer</a>
               </li>
           </ul>
       </div>
